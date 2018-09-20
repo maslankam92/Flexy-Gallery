@@ -1,0 +1,89 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+.gallery-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.panel {
+  box-shadow: inset 0 0 10px 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  transition: .7s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+p {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px black;
+}
+
+p:first-child {
+  transform: translateY(-100%);
+  transition: .3s;
+  transition-delay: .15s;
+}
+
+p:last-child {
+  transform: translateY(100%);
+  transition: .3s;
+  transition-delay: .15s;
+}
+
+p:nth-child(2) {
+  font-size: 3rem;
+}
+
+.panel.opened {
+  flex: 5;
+}
+
+.panel.opened p:first-child,
+.panel.opened p:last-child {
+  transform: translateY(0);
+}
+
+.panel-1 {
+  background: url(https://cdn.tookapic.com/photos/2018/262/3/7/371a77ee9b9893fd16488f80ff7451fb.jpeg?w=1540&q=80&sharp=7&s=ff319f111b51194095e77ce7221b0ec9) no-repeat center center;
+  background-size: cover;
+}
+
+.panel-2 {
+  background: url(https://cdn.tookapic.com/photos/2018/244/9/2/9275bebe5a04fd74079f166a9dfa9a99.jpeg?w=1540&q=80&sharp=7&s=36f8cb5e4b8632513ffb848ad4526189) no-repeat center center;
+  background-size: cover;
+}
+
+.panel-3 {
+  background: url(https://cdn.tookapic.com/photos/2018/242/b/7/b7970af1f1d5475a05dc6df655bf5bde.jpg?w=1540&q=80&sharp=7&s=32bc79a69b38e6ac4932fc80348dad6f) no-repeat center center;
+  background-size: cover;
+}
+
+.panel-4 {
+  background: url(https://cdn.tookapic.com/photos/2018/148/f/7/f7eb4bba737edcf8bee203dbed463a25.jpeg?w=1540&q=80&sharp=7&s=aa044d19ba1f2cd3de686b1c73b973ac) no-repeat center center;
+  background-size: cover;
+}
+
+.panel-5 {
+  background: url(https://cdn.tookapic.com/photos/2018/114/f/b/fbc7399026736ad2d32da88cf132cfa9.jpeg?w=1540&q=80&sharp=7&s=bb6ae5a86d6643a8c0b69cce23e20b9f) no-repeat center center;
+  background-size: cover;
+}
